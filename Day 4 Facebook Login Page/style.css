@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F0F2F5;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 80px;
+    /* align-content: center; */
+    /* display: grid;
+    place-items: center;
+    grid-template-areas: 'details login'; */
+}
+
+.details{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook-logo{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #1877F2;
+    margin-bottom: 10px;
+}
+
+.recent-login{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+.recent-account-p{
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(96,103,112);
+    margin-bottom: 25px;
+}
+
+.profile-list{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.my-profile, .add-profile{
+    width: 160px;
+    height: 206px;
+    margin-bottom: 20px;
+    /* border: 1px solid black; */
+    border: none;
+    /* box-shadow: 0 0 3px -1px gray; */
+    border: 1px solid #DEE0E3;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.my-profile:hover, .add-profile:hover{
+    box-shadow: 0 0 16px -3px rgba(0, 0, 0, 30%);
+    cursor: pointer;
+}
+
+.profile-img{
+    height: 159px;
+    width: 159px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-image: url(img/21316325_904727789674567_1708161693549425177_o.jpg);
+}
+
+.add-profile-icon{
+    height: 160px;
+    width: 160px;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1976F2;
+}
+
+.profile-name, .add-profile-account{
+    height: 46px;
+    text-align: center;
+    padding: 12px;
+    background-color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 18px;
+    color: #4B4F56;
+}
+
+.add-profile-account{
+    color: #1877F2;
+}
+
+.login-all{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    /* box-shadow: 0 0 15px -6px gray; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    padding: 15px;
+    width: 400px;
+}
+
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #DADDE1;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+form > input{
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border: 1px solid #DDDFE2;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+form > input:focus{
+    border: none;
+}
+
+.btn{
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    border: none;
+    border-radius: 7px;
+}
+
+.log-in{
+    margin-top: 5px;
+    font-size: 20px;
+    background-color: #1877F2;
+}
+
+.log-in:hover{
+    background-color: #1167d8 ;
+    cursor: pointer;
+}
+
+form > a{
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #1877F2;
+}
+
+.create-new-account{
+    background-color: #42b72a;
+    font-size: 17px;
+    padding: 14px;
+}
+
+.create-new-account:hover{
+    background-color: #3aa025;
+    cursor: pointer;
+}
+
+.container p{
+    font-size: 14px;
+    color: #1c1e21;
+    font-weight: normal;
+    margin-top: 28px;
+}
+
+@media (min-width: 900px){
+    .container{
+        height: 100vh;
+        padding: 92px 40px 132px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 1100px;
+    }
+
+    .recent-login{
+        font-size: 28px;
+    }
+
+    .details{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        align-self: flex-start;
+    }
+
+    .login-all{
+        display: flex;
+        flex-direction: column;   
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1100px)
+{
+    .recent-login{
+        font-size: 24px;
+    }
+}
